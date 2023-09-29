@@ -1,0 +1,24 @@
+﻿<Window x:Class="_03_TicTacToe_Dynamisch.StartModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03_TicTacToe_Dynamisch"
+        mc:Ignorable="d"
+        Title="StartModal" Height="300" Width="300">
+    <Grid>
+        <Label Content="Spielgröße: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name Spieler 1: " HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name Spieler 2: " HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="start_button" Content="START" HorizontalAlignment="Left" Margin="13,225,0,0" VerticalAlignment="Top" Height="34" Width="88" IsDefault="True" Click="Start_button_Click"/>
+        <Button x:Name="abbrechen_button" Content="ABBRECHEN" HorizontalAlignment="Left" Margin="183,225,0,0" VerticalAlignment="Top" Height="34" Width="88" IsCancel="True"/>
+        <TextBox x:Name="spielgroesse_input" HorizontalAlignment="Left" Margin="112,14,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="120" GotFocus="Spielgroesse_input_GotFocus" LostFocus="Spielgroesse_input_LostFocus"/>
+        <TextBox x:Name="spieler_1_input" HorizontalAlignment="Left" Margin="112,64,0,0" TextWrapping="Wrap" Text="Hans" VerticalAlignment="Top" Width="120" GotFocus="Spieler_1_input_GotFocus" LostFocus="Spieler_1_input_LostFocus"/>
+        <TextBox x:Name="spieler_2_input" HorizontalAlignment="Left" Margin="112,112,0,0" TextWrapping="Wrap" Text="Franz" VerticalAlignment="Top" Width="120" GotFocus="Spieler_2_input_GotFocus" LostFocus="Spieler_2_input_LostFocus"/>
+        <Label Content="(3 bis 8)" HorizontalAlignment="Left" Margin="146,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zeit pro Spieler: " HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="zeit_input" HorizontalAlignment="Left" Margin="112,157,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120" GotFocus="Zeit_input_GotFocus" LostFocus="Zeit_input_LostFocus"/>
+        <Label Content="(Zeit in Min)" HorizontalAlignment="Left" Margin="135,175,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
